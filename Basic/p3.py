@@ -1,0 +1,6 @@
+num1 = int(input("Enter a number:"))
+num2 = int(input("Enter a another  number:"))
+print("sum=", num1+num2)
+print("subtract=", num1-num2)
+print("product=", num1*num2)
+print("Division=", num1/num2)

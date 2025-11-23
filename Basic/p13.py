@@ -1,0 +1,7 @@
+name = ('abdhesh sah')
+new_name = name.replace("sah", "shah")
+new_name1 = new_name.split()
+new_name2 = "-".join(new_name1)
+print(new_name)
+print(new_name1)
+print(new_name2)

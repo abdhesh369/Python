@@ -1,0 +1,8 @@
+file = open("text.txt", "w")
+file.write("Hello! ,I am Abdhesh\n")
+file.write("My hobby is watching reel and coding\n")
+file.close()
+file = open("text.txt", "r")
+xyz = file.read()
+print(xyz)
+file.close()
