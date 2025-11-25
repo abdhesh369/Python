@@ -1,0 +1,3 @@
+Start log
+Second entry
+Third entry
