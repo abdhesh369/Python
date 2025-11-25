@@ -5,8 +5,8 @@ def are_anagrams(str1, str2):
 
 
 text1 = str(input("enter a sentance\n"))
-text2 = str(input("enter a sentance\n"))
+text2 = str(input("enter second sentance\n"))
 if are_anagrams(text1, text2):
-    print("anagrams")
+    print("Anagrams")
 else:
-    print("not anagrams")
+    print("Not Anagrams")
