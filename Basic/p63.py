@@ -1,1 +1,5 @@
-# Auto-generated file
+value=input("Enter the number with seperating commas;")
+list=value.split(",")
+tuple= tuple(list)
+print(f"List:{ list}")
+print(f"Tuple:{tuple}")
