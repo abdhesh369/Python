@@ -1,10 +1,11 @@
 numbers = input("Enter numbers (comma-separated): ")
+arr = [int(x.strip()) for x in numbers.split(",") if x.strip()]
 
-num_list = [int(x.strip()) for x in numbers.split(",")]
+n = len(arr)
+if n > 1:
+    first = arr[0]
+    for i in range(n - 1):
+        arr[i] = arr[i + 1]
+    arr[n - 1] = first
 
-most_frequent = None
-highest_freq = 0
-
-
-
-print("Most frequent number:", most_frequent)
+print(arr)
