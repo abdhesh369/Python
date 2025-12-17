@@ -1,7 +1,5 @@
 import random
 MAX_SCORE = 100
-PENALTY = 5
-
 
 def choose_difficulty():
     print("\nChoose difficulty:")
@@ -27,7 +25,7 @@ def number_guess():
     number = random.randint(1, limits)
     attempts = 0
     score = MAX_SCORE
-    print(f"\nI have chosen a number between 1 and {limit}")
+    print(f"\nI have chosen a number between 1 and {limits}")
 
     while attempts < max_attempts:
         try:
