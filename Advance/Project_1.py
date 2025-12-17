@@ -21,7 +21,7 @@ def calculation():
     print("4. Divide")
     print("5. Power(x^y)")
     print("6. Modulus(x%y)")
-    print("7. Square Root(x**y)")
+    print("7. Square Root (√x)")
 
     choice = input("Enter choice (1-7): ")
     try:
