@@ -1,5 +1,6 @@
 import random
-MAX_ATTEMPTS = 10
+MAX_ATTEMPTS = 0
+limit=0
 
 
 def choose_difficulty():
@@ -21,6 +22,7 @@ def choose_difficulty():
 
 
 def number_guess():
+    limit,MAX_ATTEMPTS=choose_difficulty()
     print("\nWelcome to the Game!")
     print("I have a number between 1 and 100.")
     print("Try to guess it.")
