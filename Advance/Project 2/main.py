@@ -22,22 +22,19 @@ def choose_difficulty():
 
 
 def number_guess():
-    limits,max_attempts=choose_difficulty()
-    print("\nWelcome to the Game!")
-    print("I have a number between 1 and 100.")
-    print("Try to guess it.")
+    limits, max_attempts = choose_difficulty()
 
-    number = random.randint(1, 100)
+    number = random.randint(1, limits)
     attempts = 0
-    score = 100
+    score = MAX_SCORE
+    print(f"\nI have chosen a number between 1 and {limit}")
 
     while attempts < max_attempts:
         try:
             guess = int(input("Guess: "))
         except ValueError:
-            print("Enter a valid integer.")
+            print("Enter number only.")
             continue
-
         attempts += 1
 
         if guess > number:
@@ -48,28 +45,16 @@ def number_guess():
             print("Too low! Try again.")
         else:
             print("\nCongratulations! You guessed it.")
-            print(f"Number: {number}")
-            print(f"Attempts: {attempts}")
-            print(f"Score: {score}")
-            return attempts, score
+            return True, attempts, score
 
-    print("\nGame Over!")
-    print(f"The number was: {number}")
+
+while True:
+    won, attempts, score = number_guess()
+
+    print(f"Attempts used: {attempts}")
     print(f"Score: {score}")
-    return attempts, score
 
-
-running = True
-while running:
-    attempts, score = number_guess()
-
-    while True:
-        choice = input("\nPlay again? (yes/no): ").lower()
-        if choice == "yes":
-            break
-        elif choice == "no":
-            print("Exiting game.")
-            running = False
-            break
-        else:
-            print("Invalid input. Type yes or no.")
+    again = input("\nPlay again? (yes/no): ").lower()
+    if again != "yes":
+        print("Exiting game.")
+        break
