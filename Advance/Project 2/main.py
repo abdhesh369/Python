@@ -22,7 +22,7 @@ def choose_difficulty():
 
 
 def number_guess():
-    limit,MAX_ATTEMPTS=choose_difficulty()
+    limits,max_attempts=choose_difficulty()
     print("\nWelcome to the Game!")
     print("I have a number between 1 and 100.")
     print("Try to guess it.")
@@ -31,7 +31,7 @@ def number_guess():
     attempts = 0
     score = 100
 
-    while attempts < MAX_ATTEMPTS:
+    while attempts < max_attempts:
         try:
             guess = int(input("Guess: "))
         except ValueError:
