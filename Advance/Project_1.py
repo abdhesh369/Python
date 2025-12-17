@@ -3,7 +3,11 @@ import math
 def add(x, y): return x+y
 def subtract(x, y): return x-y
 def product(x, y): return x*y
-def divide(x, y): return "Error: Division by zero is not allowed" if y == 0 else x/y
+def divide(x, y):
+    if y == 0:
+        print("Error: Division by zero")
+        return None
+    return x / y
 def power(x, y): return x**y
 def modulus(x,y): return "Error: Division by zero is not allowed" if y == 0 else x % y
 def square_root(x): return "Error: Negative Number" if x < 0 else math.sqrt(x)
@@ -42,8 +46,9 @@ def calculation():
                 print(f"Result: {num1} % {num2} = {modulus(num1, num2)}")
             else:
                 print("Invalid input\n")
-    except:
-        print("Enter valid input")
+    except ValueError:
+        print("Please enter numbers only.")
+
 
 
 xyz = True
