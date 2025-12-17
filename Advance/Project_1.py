@@ -10,10 +10,13 @@ while xyz:
         print("4. Divide")
 
         choice = input("Enter choice (1/2/3/4): ")
-
-        num1 = float(input("\nEnter first number: "))
-        num2 = float(input("Enter second number: "))
-
+        try:
+            num1 = float(input("\nEnter first number: "))
+            num2 = float(input("Enter second number: "))
+        except:
+            print("Enter valid input")
+            continue
+        
         if choice == '1':
             abc=False
             print(f"Result: {num1} + {num2} = {num1 + num2}") 
@@ -31,7 +34,7 @@ while xyz:
                 print("Error: Division by zero is not allowed.")
         else:
             print("Invalid input\n")
-            print("Enter a valid choice:")
+            continue
 
     do = True
     while do:
