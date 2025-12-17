@@ -41,9 +41,6 @@ def calcultion():
             print(f"Result: {num1} ** {num2} = {power(num1, num2)}")
         elif choice == '6':
             print(f"Result: {num1} % {num2} = {modulus(num1, num2)}")
-        elif choice == '7':
-            print(f"Result: {num1} = {square_root(num1)}")
-
         else:
             print("Invalid input\n")
     except:
