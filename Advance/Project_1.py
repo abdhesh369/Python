@@ -51,17 +51,17 @@ def calculation():
 
 
 
-xyz = True
-while xyz:
+running = True
+while running:
     calculation()
     while True:
-        mood = input("\nWant to continue (Yes/No): ").lower()
-        if mood == "yes":
+        user_choice = input("\nWant to continue (Yes/No): ").lower()
+        if user_choice == "yes":
             print("Okay, continuing...")
             break
-        elif mood == "no":
+        elif user_choice == "no":
             print("Exiting program...")
-            xyz = False
+            running = False
             break
         else:
             print("Invalid input, please type Yes or No.")
