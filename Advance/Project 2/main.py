@@ -1,6 +1,6 @@
 import random
-MAX_ATTEMPTS = 0
-limit=0
+MAX_SCORE = 100
+PENALTY = 5
 
 
 def choose_difficulty():
