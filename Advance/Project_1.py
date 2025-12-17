@@ -28,20 +28,20 @@ def calculation():
             num1 = float(input("\nEnter first number: "))
             num2 = float(input("Enter second number: "))
 
-        if choice == '1':
-            print(f"Result: {num1} + {num2} = {add(num1, num2)}")
-        elif choice == '2':
-            print(f"Result: {num1} - {num2} = {subtract(num1, num2)}")
-        elif choice == '3':
-            print(f"Result: {num1} * {num2} = {product(num1, num2)}")
-        elif choice == '4':
-            print(f"Result: {num1} / {num2} = {divide(num1, num2)}")
-        elif choice == '5':
-            print(f"Result: {num1} ** {num2} = {power(num1, num2)}")
-        elif choice == '6':
-            print(f"Result: {num1} % {num2} = {modulus(num1, num2)}")
-        else:
-            print("Invalid input\n")
+            if choice == '1':
+                print(f"Result: {num1} + {num2} = {add(num1, num2)}")
+            elif choice == '2':
+                print(f"Result: {num1} - {num2} = {subtract(num1, num2)}")
+            elif choice == '3':
+                print(f"Result: {num1} * {num2} = {product(num1, num2)}")
+            elif choice == '4':
+                print(f"Result: {num1} / {num2} = {divide(num1, num2)}")
+            elif choice == '5':
+                print(f"Result: {num1} ** {num2} = {power(num1, num2)}")
+            elif choice == '6':
+                print(f"Result: {num1} % {num2} = {modulus(num1, num2)}")
+            else:
+                print("Invalid input\n")
     except:
         print("Enter valid input")
 
