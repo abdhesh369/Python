@@ -1,5 +1,6 @@
 # do to list
-tasks = []
+#tasks = []
+tasks = ["Buy milk", "Finish homework"]
 
 
 def show_menu():
@@ -22,6 +23,7 @@ def view_tasks():
         print("\nTasks")
         for i, task in enumerate(tasks, 1):
             print(f"{i}. {task}")
+        print("\n")    
 
 
 def remove_task():
