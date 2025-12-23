@@ -1,5 +1,7 @@
 # do to list
 tasks = []
+
+
 def show_menu():
     print("1. Add Task")
     print("2. View Task")
@@ -27,3 +29,22 @@ def remove_task():
     try:
         task_num = int(input("Enter task number to remove: "))
         removed = tasks.pop(task_num - 1)
+        print(f"Removed task: ")
+    except (ValueError, IndexError):
+        print("Invalid choice!")
+
+
+while True:
+    show_menu()
+    choice = input("Choose an option: ")
+    if choice == "1":
+        add_task()
+    elif choice == "2":
+        view_tasks()
+    elif choice == "3":
+        remove_task()
+    elif choice == "4":
+        print("Goodbye!")
+        break
+    else:
+        print("Enter valid option, Try again!!")
