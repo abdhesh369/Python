@@ -12,7 +12,7 @@ def show_menu():
 def add_task():
     task = input("Enter a new task: ")
     tasks.append(task)
-    print(f"TAsk {task} added!")
+    print(f"Task: {task} ! added!")
 
 
 def view_tasks():
@@ -29,7 +29,7 @@ def remove_task():
     try:
         task_num = int(input("Enter task number to remove: "))
         removed = tasks.pop(task_num - 1)
-        print(f"Removed task: ")
+        print(f"Removed task: {removed}")
     except (ValueError, IndexError):
         print("Invalid choice!")
 
