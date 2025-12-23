@@ -1,6 +1,5 @@
-# do to list
-#tasks = []
-tasks = ["Buy milk", "Finish homework"]
+# Do To List
+tasks = []
 
 
 def show_menu():
