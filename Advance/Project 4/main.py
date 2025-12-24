@@ -1,4 +1,9 @@
 #Contact Book
+def add_contact():
+def view_contacts():
+def search_contact():
+def delete_contact():
+        
 def main():
     contacts = load_contacts()
     
