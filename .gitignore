@@ -1,0 +1,14 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VS Code
+.vscode/
+
+# Local data files
+contacts.json
+tasks.json
+
+# Shared folders
+.git/
