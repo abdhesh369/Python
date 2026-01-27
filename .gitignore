@@ -5,6 +5,7 @@ __pycache__/
 
 # VS Code
 .vscode/
+.tx
 
 # Local data files
 contacts.json
